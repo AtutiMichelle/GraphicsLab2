@@ -5,15 +5,15 @@ import cairo
 width, height = 400, 400
 surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, width, height)
 context = cairo.Context(surface)
-context.set_source_rgb(1, 1, 1)  #white
+context.set_source_rgb(1, 1, 1)  
 context.rectangle(0, 0, width, height)  
 context.fill()
 
-# Lawn color (RGB)
+# Set the Lawn color 
 lawn_color = (0.3, 0.8, 0.3)  # Green
 
-#ground structure
-context.set_source_rgb(*lawn_color)  # Set lawn color
+# Set the ground
+context.set_source_rgb(*lawn_color)  # Set the lawn color
 context.move_to(70,158)
 context.line_to(40, 170)
 context.line_to(140, 200)
