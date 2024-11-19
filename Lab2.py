@@ -66,3 +66,4 @@ context.set_source_rgb(0.192,0.235,0.294)
 context.fill()
 surface.write_to_png("2D_house.png")
 print("House drawing saved to '2D_house.png'.")
+#
